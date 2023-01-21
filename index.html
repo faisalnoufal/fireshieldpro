@@ -381,14 +381,23 @@
 
 				<div class="colophon">
 					Copyright ©
-					<span id="">2022-
+					<span id="year">  
+
 						<script>
-							document.write(new Date().getFullYear());
+							window.onload = updateYear();
+							async function updateYear() {
+  // Get the current year
+  const currentYear = new Date().getFullYear();
+
+  // Update the content of the element with the id "year"
+  document.getElementById("year").innerHTML = currentYear;
+}
 						</script>
+					
 					</span><a href="#" class="text-blueGray-500 hover:text-gray-800">
 						Flame Shield Pro
 					</a>
-					All Rights Reserved
+					All Rights Reserved.
 				</div>
 			</div>
 		</div>
@@ -419,6 +428,9 @@
 			$('html, body').animate({scrollTop: 0}, 300);
 		})
 	});
+	</script>
+	<script>
+
 	</script>
 </body>
 
