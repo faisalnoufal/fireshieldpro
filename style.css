@@ -2375,9 +2375,9 @@ form input[type="reset"]:focus {
 .site-footer .colophon {
   color: #898b8d;
 }
-.icon {
+/* .icon {
   width: 20px;
-}
+} */
 .floating{
     position:fixed;
     width: 100px;
